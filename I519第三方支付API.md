@@ -77,7 +77,7 @@ Reuest body 必須是 JSON 格式。下列為支援的欄位：
 | `mobile` | 消費者手機號碼 | | 12 | Y | C |
 | `email` | 消費者email | | 50 | N | C |
 | `payNo` | 交易序號 | 各商家可對應銷帳使用之號碼 (唯一不可重複) | 20 | Y | C |
-| `payType` | 繳費模式 | `CSTORE`, `ATM`, `CCARD`, `EACH` | 10 | Y | C |
+| `payType` | 繳費模式 | `CSTORE`, `ATM`, `CCARD`, `eACH` | 10 | Y | C |
 | `collectAgc` | 超商選單 | 若payType選擇`CSTORE`才**可且需**填入: `IBON`, `FAMIPORT` | 10 | N | C |
 | `payAmount` | 交易金額 | 數字，不包含 `-` | 10 | Y | I |
 | `payExpiryDate` | 繳費期限 | `yyyy-MM-dd HH:mm[:ss]` | 19 | Y | C |
@@ -205,7 +205,7 @@ Reuest body 會是 JSON 格式：
 | `payNo` | 交易序號 | | 20 | C |
 | `payDate` | 繳費日期 | `yyyy-MM-ddTHH:mm:ss` | 19 | D |
 | `paymentStatus` | 繳費狀態 | `UNPAID`, `PAID`, `OVERDUE`, `REFUND` | 7 | C |
-| `payType` | 繳費模式 | `CSTORE`, `ATM`, `CCARD`, `EACH` | 6 | C | 
+| `payType` | 繳費模式 | `CSTORE`, `ATM`, `CCARD`, `eACH` | 6 | C | 
 | `collectAgc` | 超商 | `IBON`, `FAMIPORT` (只有`payType=CSTORE`時此欄位才有值) | 8 | C | 
 | `mobile` | 消費者手機號碼 | | 10 | C |
 | `totalAmt` | 繳費金額 | | 7 | I |
