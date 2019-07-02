@@ -74,7 +74,7 @@ Reuest body 必須是 JSON 格式。下列為支援的欄位：
 | Name | 名稱 | 說明 | 最大長度 | 必填 | 型態 |
 |------|-----|---------|-----|------|-------|
 | `channelCode` | 通路代號 | 註冊後由i519提供 | 50 | Y | C | |
-| `mobile` | 消費者手機號碼 | | 12 | Y | C |
+| `mobile` | 消費者手機號碼 | `09xx-xxx-xxx` or `09xxxxxxxx` | 12 | Y | C |
 | `email` | 消費者email | | 50 | N | C |
 | `payNo` | 交易序號 | 各商家可對應銷帳使用之號碼 (唯一不可重複) | 20 | Y | C |
 | `payType` | 繳費模式 | `CSTORE`, `ATM`, `CCARD`, `eACH` | 10 | Y | C |
